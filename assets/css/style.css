@@ -1,5 +1,93 @@
 @import url('https://fonts.googleapis.com/css2?family=Marvel:wght@700&display=swap');
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+    font-family: Marvel, cursive;
+}
+
 body {
+    background: darkred;
+    color: blue;
+}
+
+.logo {
+    position: relative;
+    left: 40%;
+}
+
+h1 {
+    font-size: 5.4rem;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 5rem;
+    
+}
+
+h2 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+.q-button {
+    align-items: center;
+    width: 33%;
+    height: 5rem;
+    color: white;
+    background: blue;
+    font-size: x-large;
+}
+
+.q-button:hover {
+    cursor: pointer;
+    font-size: 3rem;
+}
+
+.choice-container {
+    display: flex;
+    margin-bottom: 0.8rem;
+    width: 100%;
+    border-radius: 4px;
+    background-color: yellow;
+    font-size: 3rem;
+    min-width: 80rem;
+    height: 5rem;
+}
+
+.choice-container:hover {
+cursor: pointer;
+background-color: yellowgreen;
+}
+
+.choice-prefix {
+    padding: 1rem;
+    color: black;
+}
+
+.choice-text {
+    padding: 1rem;
+    width: 100%;
+}
+
+.scores, #score {
+    font-size: 3.5rem;
+}
+
+.correct {
+    background: green;
+}
+
+.incorrect {
+    background: red;
+}
+
+
+@media screen and(max-width: 768px) {
+    .choice-container {
+        min-width: 40rem;
+    }
     
 }
