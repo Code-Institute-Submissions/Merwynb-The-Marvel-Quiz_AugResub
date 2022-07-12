@@ -22,8 +22,7 @@ h1 {
     font-size: 5.4rem;
     text-align: center;
     font-weight: bold;
-    margin-bottom: 5rem;
-    
+    margin-bottom: 1rem;   
 }
 
 h2 {
@@ -51,7 +50,7 @@ h2 {
     margin-bottom: 0.8rem;
     width: 100%;
     border-radius: 4px;
-    background-color: yellow;
+    background-color: white;
     font-size: 3rem;
     min-width: 80rem;
     height: 5rem;
@@ -70,10 +69,14 @@ background-color: yellowgreen;
 .choice-text {
     padding: 1rem;
     width: 100%;
+    margin-left: 3rem;
 }
 
 .scores, #score {
     font-size: 3.5rem;
+    color: white;
+    text-align: right;
+    margin-right: 20px;
 }
 
 .correct {
@@ -84,6 +87,21 @@ background-color: yellowgreen;
     background: red;
 }
 
+.horizontal-center {
+    margin: 0;
+    position: absolute;
+    left: 45%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.button-layout {
+    font-family: Marvel, cursive;
+    font-size: 2rem;
+    width: 100px;
+    height: 40px;
+    margin-top: 20px;
+}
 
 @media screen and(max-width: 768px) {
     .choice-container {
