@@ -18,7 +18,7 @@
         <p class="scores">Score:<span id="score">0</span></p>
     </div>
 
-    <div class="game-area">
+    <div class="game-area" name="game-area" id="game-area">
         <div class="question-options">
             <button data-type="question1" class="q-button">Question 1</button>
             <button data-type="question2" class="q-button">Question 2</button>
@@ -27,16 +27,16 @@
         
         <h2 id="question">What is the answer?</h2>
         <div class="radio-toolbar">
-            <input type="radio" id="radio1" name="radios" value="all" text="Choice" checked>
+            <input type="radio" id="radio1" name="radios" text="Choice" value="Choice 1" checked>
             <label class="choice-container" id="choice1" for="radio1">Choice 1</label>
           
-            <input type="radio" id="radio2" name="radios" value="false">
+            <input type="radio" id="radio2" name="radios" value="Choice 2" >
             <label class="choice-container" id="choice2" for="radio2">Choice 2</label>
           
-            <input type="radio" id="radio3" name="radios" value="true">
+            <input type="radio" id="radio3" name="radios" value="Choice 3">
             <label class="choice-container" id="choice3" for="radio3">Choice 3</label>
           </div>
-        <button class="horizontal-center button-layout" id="submit-answer">Submit</button>
+        <button class="horizontal-center button-layout" id="submit-answer" data-type="submit">Submit</button>
 
     </div>
 
