@@ -34,8 +34,16 @@ function displayQuestion() {
 
 }
 
-function selectAnswer() {
-
+function selectAnswer(e) {
+    const selectedLabel = e.target
+    const correct = selectedLabel.dataset.correct
+    if(correct) {
+        score = score+10;
+    }
+    // Array.from(answerElement.children).forEach(label => {
+    //     setStatusClass(label, label.dataset.correct)
+    // }) 
+    nextButton.classList.remove('.hide');
 }
 
 function resetState() {
@@ -44,6 +52,14 @@ function resetState() {
         answerElement.removeChild(answerElement.firstChild)
     }
 }
+
+// function setStatusClass(element, correct) {
+//     clearStatusClass(element)
+//     if(correct) {
+//         element.
+//     }
+
+// }
 
 const question = [
     {
