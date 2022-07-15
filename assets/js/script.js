@@ -1,16 +1,83 @@
+const startButton = document.getElementById("start-quiz");
+const gameArea = document.getElementById("game-area");
+const questionElement = document.getElementById('question');
+const answerElement = document.getElementById("answer-buttons")
+
+let currentQuestionIndex, score = 0;
+
+startButton.addEventListener('click', startGame)
+
+function startGame() {
+    startButton.classList.add('hide');
+    gameArea.classList.remove('hide');
+    setNextQuestion(); 
+}
+
+function setNextQuestion() {
+    resetState();
+    displayQuestion(currentQuestionIndex);
+}
+
+function displayQuestion() {
+    questionElement.innerText = question.question;
+    question.answers.forEach(answer => {
+        const label = document.createElement('label')
+        label.innerText = answer.text;
+        label.classList.add('choice-container')
+    })
+
+}
+
+function resetState() {
+
+}
+
+const question = [
+    {
+        question: 'Who Plays Iron Man?',
+        answers:[
+            {text: 'Johnny Depp', correct: false},
+            {text: 'Robert Downey Jr.', correct: true},
+            {text: 'Brad Pitt', correct: false},
+            {text: 'Gokul Babu', correct: false}
+        ]
+    },
+    {
+        question: 'How many Infinity Stones are there?',
+        answers:[
+            {text: 'Five', correct: false},
+            {text: 'Six', correct: true},
+            {text: 'Eight', correct: false},
+            {text: 'Infinity', correct: false}
+        ]
+    },
+    {
+        question: "Who was able to pick Thor's hammer in End Game?",
+        answers:[
+            {text: 'Captain America', correct: true},
+            {text: 'Hulk', correct: false},
+            {text: 'Joey tribbiani', correct: false},
+            {text: 'Spider Man', correct: false}
+        ]
+    }
+]
+
 
 document.addEventListener("DOMContentLoaded", function() {
-    let buttons = document.getElementsByTagName("button");
-    for (let button of buttons) {
+    // let buttons = document.getElementsByTagName("button");
+    // for (let button of buttons) {
+        runGame("question1");
         button.addEventListener("click", function() {
             if (this.getAttribute("data-type") === "submit") {
                 checkAnswer();
-            } else {
-                let questionType = this.getAttribute("data-type");
-                runGame(questionType);
             }
+            // } else {
+            //     let questionType = this.getAttribute("data-type");
+            //     checkAnswer();
+            //     runGame(questionType);
+            // }
         });
-    }
+    // }
     runGame("question1");
 });
 
@@ -28,12 +95,13 @@ function runGame(questionType) {
 }
 
 function checkAnswer() {
-    var score = 0;
+   
+   var score = 0;
     if((document.getElementsByTagName("button")[0].getAttribute("data-type") == "question1") && (document.getElementById('choice2').textContent=="Robert Downey Jr.")){
         console.log("Correct Answer1");
         score = incrementScore(score);
     }
-    
+    console.log("*************"+document.querySelectorAll('input[name="radios"]')[0].value);
     if((document.getElementsByTagName("button")[1].getAttribute("data-type") == "question2") && (document.getElementById('choice2').textContent=="Six")){
         console.log("Correct Answer2");
         score = incrementScore(score);
@@ -43,11 +111,12 @@ function checkAnswer() {
         console.log("Correct Answer3");
         score = incrementScore(score);
     }
+    document.getElementById('score').textContent = score;
     console.log("Score"+score);
 }
 
 function incrementScore(score) {
-    score++;
+    score = score+10;
     return score;
 }
 

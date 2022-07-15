@@ -45,6 +45,10 @@ h2 {
     font-size: 3rem;
 }
 
+.hide {
+    display: none;
+}
+
 .choice-container {
     display: flex;
     margin-bottom: 0.8rem;

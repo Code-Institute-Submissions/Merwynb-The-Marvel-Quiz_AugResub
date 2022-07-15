@@ -18,28 +18,29 @@
         <p class="scores">Score:<span id="score">0</span></p>
     </div>
 
-    <div class="game-area" name="game-area" id="game-area">
-        <div class="question-options">
+    <div class="game-area hide" name="game-area" id="game-area">
+        <!-- <div class="question-options">
             <button data-type="question1" class="q-button">Question 1</button>
             <button data-type="question2" class="q-button">Question 2</button>
             <button data-type="question3" class="q-button">Question 3</button>
-        </div>
+        </div> -->
         
         <h2 id="question">What is the answer?</h2>
-        <div class="radio-toolbar">
-            <input type="radio" id="radio1" name="radios" text="Choice" value="Choice 1" checked>
-            <label class="choice-container" id="choice1" for="radio1">Choice 1</label>
+        <div id="answer-buttons">
+            <label class="choice-container">Choice 1</label>
           
-            <input type="radio" id="radio2" name="radios" value="Choice 2" >
-            <label class="choice-container" id="choice2" for="radio2">Choice 2</label>
+            <label class="choice-container">Choice 2</label>
           
-            <input type="radio" id="radio3" name="radios" value="Choice 3">
-            <label class="choice-container" id="choice3" for="radio3">Choice 3</label>
-          </div>
-        <button class="horizontal-center button-layout" id="submit-answer" data-type="submit">Submit</button>
+            <label class="choice-container">Choice 3</label>
 
+            <label class="choice-container">Choice 4</label>
+            
+        </div>
+        
+        <button class="horizontal-center button-layout" id="next-button">Next</button>
+        
     </div>
-
+    <button class="horizontal-center button-layout" id="start-quiz">Start</button>
     </div>
 
 
