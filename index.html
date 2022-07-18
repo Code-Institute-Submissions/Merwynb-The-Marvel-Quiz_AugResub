@@ -10,33 +10,20 @@
 </head>
 
 <body>
-
-    <img class="logo" src="assets/images/logo (2).png" alt="logo">
-
-    <h1 class="heading"> The Marvel Quiz</h1>
-    <div class="score-area">
+    <img class="logo hide" id="logo" src="assets/images/logo (2).png" alt="logo">
+    <img class="logo" id="banner" src="assets/images/logo (2).png" alt="logo">
+    <h1 class="heading hide" id="quiz-title"> The Marvel Quiz</h1>
+    <div class="score-area hide" id="score-area">
         <p class="scores">Score:<span id="score">0</span></p>
     </div>
-
     <div class="game-area hide" name="game-area" id="game-area">
-        <!-- <div class="question-options">
-            <button data-type="question1" class="q-button">Question 1</button>
-            <button data-type="question2" class="q-button">Question 2</button>
-            <button data-type="question3" class="q-button">Question 3</button>
-        </div> -->
-        
         <h2 id="question">What is the answer?</h2>
         <div id="answer-buttons">
             <label class="choice-container">Choice 1</label>
-          
             <label class="choice-container">Choice 2</label>
-          
             <label class="choice-container">Choice 3</label>
-
             <label class="choice-container">Choice 4</label>
-            
         </div>
-        
         <button class="horizontal-center button-layout" id="next-button">Next</button>
         
     </div>
