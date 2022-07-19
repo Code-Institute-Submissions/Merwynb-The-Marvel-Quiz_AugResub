@@ -68,8 +68,10 @@ Ihave also run my CSS file in the official Jigsaw Validator and no errors return
 
 I have tested my website on the Lighthouse feature in the Google Chrome Dev tools and I am happy to say that my site has a sore of 99 in Performance, 100 in Accessibility, 92 in Best Practices and 90 in SEO for desktop and a sore of 92 in Performance, 100 in Accessibility, 92 in Best Practices and 83 in SEO for mobile-device.
 
+Lighthouse Reort for Desktop
 ![Lighthouse Reort for Desktop](assets/images/lighthouse-performance-desktop.png)
 
+Lighthouse Reort for mobile
 ![Lighthouse Reort for mobile](assets/images/lighthouse-performance-mobile.png)
 
 
