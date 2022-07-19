@@ -13,6 +13,10 @@ body {
     color: blue;
 }
 
+#banner, start-quiz {
+    margin-top: 7%;
+}
+
 .logo {
    display: block;
    margin-left: auto;
@@ -31,20 +35,6 @@ h2 {
     font-size: 3.5rem;
     font-weight: bold;
     color: white;
-}
-
-.q-button {
-    align-items: center;
-    width: 33%;
-    height: 5rem;
-    color: white;
-    background: blue;
-    font-size: x-large;
-}
-
-.q-button:hover {
-    cursor: pointer;
-    font-size: 3rem;
 }
 
 .hide {
@@ -67,26 +57,11 @@ cursor: pointer;
 background-color: yellowgreen;
 }
 
-.choice-prefix {
-    padding: 1rem;
-    color: black;
-}
-
-.choice-text {
-    padding: 1rem;
-    width: 100%;
-    margin-left: 3rem;
-}
-
 .scores, #score {
     font-size: 3.5rem;
     color: white;
     text-align: right;
     margin-right: 20px;
-}
-
-.correct {
-    background: green;
 }
 
 .disable-selected-element {
@@ -100,18 +75,6 @@ background-color: yellowgreen;
     pointer-events: none;
 }
 
-.incorrect {
-    background: red;
-}
-
-.horizontal-center {
-    margin: 0;
-    position: absolute;
-    left: 45%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-}
-
 .button-layout {
     font-family: Marvel, cursive;
     font-size: 2rem;
@@ -123,13 +86,30 @@ background-color: yellowgreen;
 @media screen and (max-width: 768px) {
     .choice-container {
         min-width: 40rem;
+    }  
+
+    #banner {
+        width: 70%;
+        margin: 0 auto;
+        margin-top: 50%;
     }
-    
+
+    .score-area {
+        position: relative;
+        float: right;
+    }
+
 }
 
 @media screen and (max-width: 400px) {
     * {
         font-size: 20%;
+    }
+
+    #banner {
+        width: 50%;
+        margin: 0 auto;
+        margin-top: 30%;
     }
 
     .button-layout {
@@ -138,7 +118,5 @@ background-color: yellowgreen;
         width: 50px;
         height: 20px;
         margin-top: 20px;
-    }
-   
-    
+    }  
 }
