@@ -11,15 +11,21 @@ __Start Screen__
 
 I have created a start quiz screen which displays a Marvel image banner so that it looks attractive to the user. I have also included a Start Quiz button, clicking on this button hides the banner and the start quiz button and displays the game screen which were all hidden in the Start Screen.
 
+![Start Screen](assets/images/start-screen.png)
+
 
 __The Marvel Quiz Game Screen__
 
 The Marvel Quiz Game Screen comprises of The Marvel logo followed by the title of the game "The Marvel Quiz", the score area, the question and choices area and finally the Next button.
 
+![Quiz Game Screen](assets/images/quiz-game-screen.png)
+
 
 __The Score Area__
 
 The Score area displays the current score of the user. When the user clicks on the choice labels the score increments by 10 points on every correct answer which goes upto a maximum of 60 points. On restarting the game the score clears back to 0.
+
+![Score Area](assets/images/score-area.png)
 
 
 __The Game Area__
@@ -28,14 +34,20 @@ The Game Area is comprised of 2 aspects:
 1) The Question - This displays a question from the Marvel Quiz which is chosen on random by the computer from the 6 questions and displays a new question everytime the Next button is clicked.
 2) The Choices - This displays 4 choices for the user to choose from. The choices are specific to the question displayed on the screen and returns 1 correct answer. The choices are interactive as when a user hovers the pointer over them it highlights the current choice label and when clicked it will lock the choice and disable the other choices which is displayed with gray text.
 
+![Game Area](assets/images/game-area.png)
+
 
 __The Next Button__
 
 The Next button is placed in the center below the choices. On clicking this button the computer checks the user's input and then if the input is correct it increments the score by 10 points and if incorrect it remains the same. This button then displays the next random question maintaining the aspects of the game screen. 
 
+![Next Button](assets/images/next-button.png)
+
 __The Restart Button__
 
 The Restart button is displayed only on the last random question of the quiz. When the user clicks on this button, the game is reset to the first random question and the score is also cleared to 0 which allows the user to play the quiz again!.
+
+![Restart Button](assets/images/restart-button.png)
 
 
 ## Future Features
@@ -56,9 +68,15 @@ Ihave also run my CSS file in the official Jigsaw Validator and no errors return
 
 I have tested my website on the Lighthouse feature in the Google Chrome Dev tools and I am happy to say that my site has a sore of 99 in Performance, 100 in Accessibility, 92 in Best Practices and 90 in SEO for desktop and a sore of 92 in Performance, 100 in Accessibility, 92 in Best Practices and 83 in SEO for mobile-device.
 
+![Lighthouse Reort for Desktop](assets/images/lighthouse-performance-desktop.png)
+
+![Lighthouse Reort for mobile](assets/images/lighthouse-performance-mobile.png)
+
+
+
 ### Bugs
 
-The W3C Validator was showing an error in my index.html file as an unexpected ending </div> tag which i had used to enclose the choices container. 
+The W3C Validator was showing an error in my index.html file as an unexpected ending </div> tag which i had used to enclose the choices container. I rectified it by deleting the tag. 
 
 ## Deployment
 
