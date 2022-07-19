@@ -1,108 +1,76 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# The Marvel Quiz
 
-Welcome MERWYN BARRETTO,
+The Marvel Quiz is a quick 6 questions quiz game based on the Marvel movies. The target audience for this game are kids and adults who are Marvel movie enthusiasts who can test their knowledge about the Marvel universe.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+## Features
 
-## Gitpod Reminders
+__Start Screen__
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+I have created a start quiz screen which displays a Marvel image banner so that it looks attractive to the user. I have also included a Start Quiz button, clicking on this button hides the banner and the start quiz button and displays the game screen which were all hidden in the Start Screen.
 
-`python3 -m http.server`
 
-A blue button should appear to click: _Make Public_,
+__The Marvel Quiz Game Screen__
 
-Another blue button should appear to click: _Open Browser_.
+The Marvel Quiz Game Screen comprises of The Marvel logo followed by the title of the game "The Marvel Quiz", the score area, the question and choices area and finally the Next button.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
 
-A blue button should appear to click: _Make Public_,
+__The Score Area__
 
-Another blue button should appear to click: _Open Browser_.
+The Score area displays the current score of the user. When the user clicks on the choice labels the score increments by 10 points on every correct answer which goes upto a maximum of 60 points. On restarting the game the score clears back to 0.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
 
-To log into the Heroku toolbelt CLI:
+__The Game Area__
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+The Game Area is comprised of 2 aspects:
+1) The Question - This displays a question from the Marvel Quiz which is chosen on random by the computer from the 6 questions and displays a new question everytime the Next button is clicked.
+2) The Choices - This displays 4 choices for the user to choose from. The choices are specific to the question displayed on the screen and returns 1 correct answer. The choices are interactive as when a user hovers the pointer over them it highlights the current choice label and when clicked it will lock the choice and disable the other choices which is displayed with gray text.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
 
-------
+__The Next Button__
 
-## Release History
+The Next button is placed in the center below the choices. On clicking this button the computer checks the user's input and then if the input is correct it increments the score by 10 points and if incorrect it remains the same. This button then displays the next random question maintaining the aspects of the game screen. 
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+__The Restart Button__
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+The Restart button is displayed only on the last random question of the quiz. When the user clicks on this button, the game is reset to the first random question and the score is also cleared to 0 which allows the user to play the quiz again!.
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+## Future Features
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+In the future I would like to add an End Game screen which saves the score and allows the user to enter and save their name so they can compete with other players playing The Marvel Quiz on the web. I would also like to update and add more questions and Levels to the Quiz to choose difficulty level.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+## Testing
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+I have tested the website on different platforms like Google Chrome and Firefox which works fine. 
+I have manually tested all the buttons and labels with correct and incorrect inputs within the website to be working as expected. 
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+### Validator Testing
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+I have run all my html pages in the official W3C Validator and no erros returned.
+Ihave also run my CSS file in the official Jigsaw Validator and no errors returned.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+### Lighthouse Testing
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+I have tested my website on the Lighthouse feature in the Google Chrome Dev tools and I am happy to say that my site has a sore of 99 in Performance, 100 in Accessibility, 92 in Best Practices and 90 in SEO for desktop and a sore of 92 in Performance, 100 in Accessibility, 92 in Best Practices and 83 in SEO for mobile-device.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+### Bugs
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+The W3C Validator was showing an error in my index.html file as an unexpected ending </div> tag which i had used to enclose the choices container. 
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+## Deployment
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+The site was deployed to GitHub pages. The steps to deploy are as follows: 
+1) In the GitHub repository, navigate to the Settings tab 
+2) From the source section drop-down menu, select the Master Branch
+3) Once the master branch has been selected, the page will be automatically refreshed with a detailed   ribbon display to indicate the successful deployment. 
 
-------
+This is the live link: 
 
-## FAQ about the uptime script
+## Credits
 
-**Why have you added this script?**
+1) The interactive choices to highlight is inspired from the How to make Tea coding challenge by the Code Institute which i had undergone before I started with this course.
+2) I have researched on the website of W3 Schools www.w3schools.com to findout how I can go about with Javascript which was very helpful.
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+### Special Thanks to:
+My wife Jerilee who helped me make choices with the color schemes to use. Last but not the Least a Big Thank you to my friend Sunny Kumar who guided me with the concepts of Javascript as there were times when i was so stuck with my javascript code and I was then able to attain the result that I was looking for. There was also a time when I had almost finished my code and due to my negligence I had not commited and pushed my code and I accidently closed my Gitpod tab and lost 1/4th of my code. Sunny helped me to retrive this code as i luckily had the latest version of my quiz opened in the web browser, he then recovered the lost code through dev tools.
