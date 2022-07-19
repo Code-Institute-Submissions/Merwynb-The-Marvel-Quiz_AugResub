@@ -1,6 +1,8 @@
 # The Marvel Quiz
 
-The Marvel Quiz is a quick 6 questions quiz game based on the Marvel movies. The target audience for this game are kids and adults who are Marvel movie enthusiasts who can test their knowledge about the Marvel universe.
+The Marvel Quiz is a quick 6 questions quiz game based on the Marvel movies. The target audience for this game are kids and adults who are Marvel movie enthusiasts who can test their knowledge about the Marvel universe. This quiz is compatible for desktop, laptop, tablet and mobile devices
+
+![Site view](assets/images/responsiveness.png)
 
 
 ## Features
