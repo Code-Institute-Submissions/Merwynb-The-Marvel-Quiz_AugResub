@@ -36,6 +36,7 @@ function startGame() {
 }
 
 function setNextQuestion() {
+    nextButton.classList.add('hide');
     resetState();
     displayQuestion(shuffledQuestion[currentQuestionIndex]);
 }
