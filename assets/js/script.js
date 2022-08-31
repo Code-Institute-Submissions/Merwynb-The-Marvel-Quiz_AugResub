@@ -22,6 +22,8 @@ nextButton.addEventListener('click', () => {
 })
 
 function startGame() {
+
+    // Hides and unhides logos and buttons and shuffles questions 
     answerElement.classList.remove('disable-element');
     startButton.classList.add('hide');
     quizBanner.classList.add('hide');
@@ -36,12 +38,16 @@ function startGame() {
 }
 
 function setNextQuestion() {
+
+    //Hides the next button and displays random question.
     nextButton.classList.add('hide');
     resetState();
     displayQuestion(shuffledQuestion[currentQuestionIndex]);
 }
 
 function displayQuestion(question) {
+
+    //Displays questions set in const question on clicking start
     questionElement.innerText = question.question;
     question.answers.forEach(answer => {
         const label = document.createElement('label')
@@ -57,6 +63,10 @@ function displayQuestion(question) {
 }
 
 function selectAnswer(e) {
+
+    // Displays Answer choices and increments score if correct.
+    // Shows Restart button after last question answered.
+    // Resets Score to 0 on clicking Restart.
     const selectedLabel = e.target
     answerElement.classList.add('disable-element');
     selectedLabel.classList.add('disable-selected-element');
@@ -78,6 +88,8 @@ function selectAnswer(e) {
 }
 
 function resetState() {
+
+    //Displays the text of the choice containers.
     nextButton.classList.add('.hide');
     while(answerElement.firstChild) {
         answerElement.removeChild(answerElement.firstChild)
@@ -85,6 +97,8 @@ function resetState() {
 }
 
 const question = [
+
+    // Question and answers set with true and false values assigned.
     {
         question: 'Who Plays Iron Man?',
         answers:[
