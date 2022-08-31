@@ -79,6 +79,7 @@ Lighthouse Reort for mobile
 ### Bugs
 
 The W3C Validator was showing an error in my index.html file as an unexpected ending </div> tag which i had used to enclose the choices container. I rectified it by deleting the tag. 
+Major bug which let the user click the next button without answering the question resulting in console crash. I solved it by hiding the Next button until the user selects an answer choice.
 
 ## Deployment
 
