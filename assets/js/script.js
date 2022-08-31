@@ -8,6 +8,7 @@ const quizLogo = document.getElementById("logo");
 const quizBanner = document.getElementById("banner");
 const quizTitle = document.getElementById("quiz-title")
 const scoreArea = document.getElementById("score-area");
+const tagline = document.getElementById("tagline");
 
 
 let shuffledQuestion, currentQuestionIndex, score = 0;
@@ -26,6 +27,7 @@ function startGame() {
     // Hides and unhides logos and buttons and shuffles questions 
     answerElement.classList.remove('disable-element');
     startButton.classList.add('hide');
+    tagline.classList.add('hide')
     quizBanner.classList.add('hide');
     scoreLabel.innerText = 0;
     shuffledQuestion = question.sort(() => Math.random() - .5);
