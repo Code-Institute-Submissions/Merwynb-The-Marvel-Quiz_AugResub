@@ -13,6 +13,7 @@ body {
     color: blue;
 }
 
+/* Ouiz start page */
 #banner, start-quiz {
     margin-top: 7%;
 }
@@ -23,7 +24,7 @@ body {
    margin-right: auto;
 }
 
-
+/* Quiz heading and Question*/
 h1 {
     font-size: 5.4rem;
     text-align: center;
@@ -37,10 +38,12 @@ h2 {
     color: white;
 }
 
+/* To Hide and unhide elements*/
 .hide {
     display: none;
 }
 
+/* Answer choices*/
 .choice-container {
     display: flex;
     margin-bottom: 0.8rem;
@@ -57,6 +60,7 @@ cursor: pointer;
 background-color: yellowgreen;
 }
 
+/* Score display*/
 .scores, #score {
     font-size: 3.5rem;
     color: white;
@@ -64,17 +68,20 @@ background-color: yellowgreen;
     margin-right: 20px;
 }
 
+/* Set selected answer and disable clicks*/
 .disable-selected-element {
     background-color: yellowgreen;
     color: blue;
     pointer-events: none;
 }
 
+/* Disable clicks on other answer choices after selected answer*/
 .disable-element {
     color: gray;
     pointer-events: none;
 }
 
+/* Button layout*/
 .button-layout {
     font-family: Marvel, cursive;
     font-size: 2rem;
@@ -84,6 +91,7 @@ background-color: yellowgreen;
     margin-bottom: 20px;
 }
 
+/* Media Queries*/
 @media screen and (max-width: 768px) {
     .choice-container {
         min-width: 40rem;
